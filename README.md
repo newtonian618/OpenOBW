@@ -10,5 +10,15 @@ OpenOBW采用的是一种被VEI、VPG等公司广泛采用的成熟技术，国�
 
 <img width="980" height="624" alt="{8F7E03FD-5500-45B6-8DBC-9F905C13F696}" src="https://github.com/user-attachments/assets/65f07953-77a2-4f34-bb0c-93d5f6e290e0" />
 
+电路：
 随着半导体技术的发展，IMU（Inertial Measurement Unit）已经十分成熟，测量倾角变得十分简单，这正是本项目的技术基础。OpenOBW采用应用广泛的BMI088六轴IMU作为核心器件，用STM32F103C8T6对齐进行控制，并通过RS485芯片MS2548与主机进行通信。当然传感器还需要电源，考虑到卡车上的供电通畅是24V并且会有很大的波动，电源芯片选择了工作电压超过40V的GSM61410。电路图源文件请在Circuit目录获取。
+
+结构：
+OBW工况比较差，肯定需要一个比较牢固的结构，最稳妥的方法就是搞个盒子整个给封起来。外壳可以用3D打印，真正应用场景不要用PLA材料，用不了多久。建议用PETG-CF，用ASA-CF就更好了。设计图如下：
+<img width="645" height="375" alt="{39FE1DF0-5701-40F0-ACDB-7CB80E0ABE0B}" src="https://github.com/user-attachments/assets/607d7903-f818-48a6-aa21-14c513db2903" />
+制作好的传感器图片如下，作为对比，蓝色的为现在最新一代装载车桥上的承重传感器GX-6，体积更小一些，但精度和智能化程度要高很多。
+<img width="711" height="644" alt="{DD606A72-67E4-41C1-BE0B-99BC01A43F45}" src="https://github.com/user-attachments/assets/56ec7046-fdab-44e5-bc05-3d468090399f" />
+3D设计的STL文件在case目录下，直接拿去打印就行。安装的时候电路板塞进去压到底，灌点硅酮密封胶，电缆套个过孔胶套塞缺口，用胶粘上盖子即可。
+
+
 
