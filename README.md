@@ -16,8 +16,10 @@ OpenOBW采用的是一种被VEI、VPG等公司广泛采用的成熟技术，国�
 结构：
 OBW工况比较差，肯定需要一个比较牢固的结构，最稳妥的方法就是搞个盒子整个给封起来。外壳可以用3D打印，真正应用场景不要用PLA材料，用不了多久。建议用PETG-CF，用ASA-CF就更好了。设计图如下：
 <img width="645" height="375" alt="{39FE1DF0-5701-40F0-ACDB-7CB80E0ABE0B}" src="https://github.com/user-attachments/assets/607d7903-f818-48a6-aa21-14c513db2903" />
+
 制作好的传感器图片如下，作为对比，蓝色的为现在最新一代装载车桥上的承重传感器GX-6，体积更小一些，但精度和智能化程度要高很多。
 <img width="711" height="644" alt="{DD606A72-67E4-41C1-BE0B-99BC01A43F45}" src="https://github.com/user-attachments/assets/56ec7046-fdab-44e5-bc05-3d468090399f" />
+
 3D设计的STL文件在case目录下，直接拿去打印就行。安装的时候电路板塞进去压到底，灌点硅酮密封胶，电缆套个过孔胶套塞缺口，用胶粘上盖子即可。
 
 
